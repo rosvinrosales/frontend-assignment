@@ -1,23 +1,27 @@
-node_modules
-package-lock.json
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Logs
-logs
-*.log
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# IDE
-.vscode/*
-!.vscode/tasks.js
-!.vscode/extensions.json
-*.coverage
-*.coveragexml
-.idea
+# env files
+.env*
 
-# Optional npm cache directory
-.npm
+# vercel
+.vercel
 
-# OS generated files #
-.DS_Store
-.DS_Store?
-*.local
+# typescript
+*.tsbuildinfo
+next-env.d.ts
